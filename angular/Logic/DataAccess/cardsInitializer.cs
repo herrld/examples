@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace Logic.DataAccess
 {
-    public class cardsInitializer: DropCreateDatabaseAlways<cardsContext>
+    public class cardsInitializer : DropCreateDatabaseAlways<cardsContext>
     {
         protected override void Seed(cardsContext context)
         {
