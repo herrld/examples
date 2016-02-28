@@ -11,8 +11,10 @@ namespace ParallelExamples
 {
     class Program
     {
+        enum testEnum { number1, pickle };
         static void Main(string[] args)
         {
+            
             Console.WriteLine("before");
             var cards = Task.Run(new Func<List<Card>>(getData));
             cards.Wait();
