@@ -11,6 +11,7 @@ namespace CodeDom
 {
     class CalculatorGenerator
     {
+        private Dictionary<string, CodeMemberProperty> properties = new Dictionary<string, CodeMemberProperty>();
         public CalculatorGenerator()
         {
             CodeCompileUnit codeCompileUnit = new CodeCompileUnit();
@@ -31,9 +32,51 @@ namespace CodeDom
 
         internal void addMemberFunctions(CodeTypeDeclaration targetClass)
         {
-            
+            targetClass.Members.Add(createDivide(properties["X"], properties["Y"]));
         }
         
+        internal CodeMemberMethod createExponent(CodeMemberProperty x, CodeMemberProperty y)
+        {
+            CodeMemberMethod exponent = new CodeMemberMethod();
+            exponent.Name = "Exponent";
+            exponent.Attributes = MemberAttributes.Public;
+            exponent.ReturnType = createTypeReference<double>();
+            CodeParameterDeclarationExpression powerParameter = 
+                new CodeParameterDeclarationExpression(typeof(double), "power");
+            exponent.Parameters.Add(powerParameter);
+            CodeFieldReferenceExpression yReference = memberFieldReference(y.Name);
+
+            return exponent;
+        }
+
+        internal CodeMemberMethod createAdd(CodeMemberProperty x, CodeMemberProperty y)
+        {
+            CodeMemberMethod add = new CodeMemberMethod();
+            add.Name = "Add";
+            add.ReturnType = createTypeReference<double>();
+            add.Attributes = MemberAttributes.Public | MemberAttributes.Final;
+            CodeFieldReferenceExpression xRef = memberFieldReference(x.Name);
+            CodeFieldReferenceExpression yRef = memberFieldReference(y.Name);
+            CodeBinaryOperatorExpression addLogic = new CodeBinaryOperatorExpression(xRef,CodeBinaryOperatorType.Add,yRef);
+            CodeMethodReturnStatement returnStatement = new CodeMethodReturnStatement(addLogic);
+            return add;
+        }
+
+        internal CodeMemberMethod createMultiply(CodeMemberProperty x, CodeMemberProperty y)
+        {
+            CodeMemberMethod multiply = new CodeMemberMethod();
+            multiply.Name = "Multiply";
+            multiply.ReturnType = createTypeReference<double>();
+            multiply.Attributes = MemberAttributes.Public;
+            CodeFieldReferenceExpression xRef = memberFieldReference(x.Name);
+            CodeFieldReferenceExpression yRef = memberFieldReference(y.Name);
+
+            CodeBinaryOperatorExpression multiplyLogic =
+                new CodeBinaryOperatorExpression(xRef, CodeBinaryOperatorType.Multiply, yRef);
+            CodeMethodReturnStatement returnStatement = new CodeMethodReturnStatement(multiplyLogic);
+            return multiply;
+        }
+
         internal CodeMemberMethod createDivide(CodeMemberProperty x, CodeMemberProperty y)
         {
             CodeMemberMethod divideMethod = new CodeMemberMethod();
@@ -94,6 +137,7 @@ namespace CodeDom
             xProperty.Type = createTypeReference<System.Double>();
             addGeter(xProperty, "x");
             addSetter(xProperty, "x");
+            properties.Add(xProperty.Name, xProperty);
             targetClass.Members.Add(xProperty);
 
             yProperty.Attributes = MemberAttributes.Public | MemberAttributes.Final;
@@ -103,6 +147,7 @@ namespace CodeDom
             yProperty.Type = createTypeReference<System.Double>();
             addGeter(yProperty, "y");
             addSetter(yProperty, "y");
+            properties.Add(yProperty.Name, yProperty);
             targetClass.Members.Add(yProperty);
         }
 
