@@ -23,7 +23,7 @@ namespace ParallelExamples
         }
         private static List<Card> getData()
         {
-            int iterations = 1000;
+            int iterations = 100000;
             List<Card> newCards = new List<Card>();
             for (var i = 0; i < iterations; i++)
             {
@@ -35,17 +35,17 @@ namespace ParallelExamples
 
             // basic foreach and it works
             //Parallel.ForEach(newCards, (curCard) => buildTasks.Add(curCard.build("s")));
-            Parallel.ForEach<Card,int>(newCards,() => 0,(curCard,loop, id) =>{
+            Parallel.ForEach<Card,int>(newCards,() => 0,(curCard, loop, id) =>{
                 curCard.ID = id;
                 curCard.name = id.ToString();
                 return id++;
             },(finalId)=>{});
             
             // not working
-            Parallel.For(0, iterations, () => newCards,(count,state,interimResult) => { 
-                buildTasks.Add(interimResult.ElementAt(count).build("s"));
-                return interimResult;
-            }, (result) => result.Add(new Card()));
+            //Parallel.For(0, iterations, () => newCards,(count,state,interimResult) => { 
+            //    buildTasks.Add(interimResult.ElementAt(count).build("s"));
+            //    return interimResult;
+            //}, (result) => result.Add(new Card()));
 
             Stopwatch sw = Stopwatch.StartNew();
             //Parallel.For(0, 100000, index =>

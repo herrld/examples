@@ -34,3 +34,39 @@ C:\Users\lee\Web Projects\Examples\examples\validate\validate\bin\System.Web.Htt
 C:\Users\lee\Web Projects\Examples\examples\validate\validate\obj\Debug\validate.csprojResolveAssemblyReference.cache
 C:\Users\lee\Web Projects\Examples\examples\validate\validate\obj\Debug\validate.dll
 C:\Users\lee\Web Projects\Examples\examples\validate\validate\obj\Debug\validate.pdb
+D:\CodeRepos\examples\validate\validate\bin\validate.dll.config
+D:\CodeRepos\examples\validate\validate\bin\validate.dll
+D:\CodeRepos\examples\validate\validate\bin\validate.pdb
+D:\CodeRepos\examples\validate\validate\bin\Antlr3.Runtime.dll
+D:\CodeRepos\examples\validate\validate\bin\EntityFramework.dll
+D:\CodeRepos\examples\validate\validate\bin\EntityFramework.SqlServer.dll
+D:\CodeRepos\examples\validate\validate\bin\Microsoft.Web.Infrastructure.dll
+D:\CodeRepos\examples\validate\validate\bin\Newtonsoft.Json.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Net.Http.Formatting.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Helpers.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Http.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Http.WebHost.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Mvc.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Optimization.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Razor.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.WebPages.Deployment.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.WebPages.dll
+D:\CodeRepos\examples\validate\validate\bin\System.Web.WebPages.Razor.dll
+D:\CodeRepos\examples\validate\validate\bin\WebGrease.dll
+D:\CodeRepos\examples\validate\validate\bin\EntityFramework.xml
+D:\CodeRepos\examples\validate\validate\bin\EntityFramework.SqlServer.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Helpers.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Mvc.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Optimization.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Razor.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.WebPages.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.WebPages.Deployment.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.WebPages.Razor.xml
+D:\CodeRepos\examples\validate\validate\bin\Antlr3.Runtime.pdb
+D:\CodeRepos\examples\validate\validate\bin\Newtonsoft.Json.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Net.Http.Formatting.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Http.xml
+D:\CodeRepos\examples\validate\validate\bin\System.Web.Http.WebHost.xml
+D:\CodeRepos\examples\validate\validate\obj\Debug\validate.csprojResolveAssemblyReference.cache
+D:\CodeRepos\examples\validate\validate\obj\Debug\validate.dll
+D:\CodeRepos\examples\validate\validate\obj\Debug\validate.pdb

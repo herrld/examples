@@ -10,7 +10,9 @@ namespace validate.Models
     {
         public int ID { get; set; }
         [Required]
+        [StringLength(20,MinimumLength = 2)]
         public string name { get; set; }
+        [Range(2,10)]
         public int? pin { get; set; }
     }
 }

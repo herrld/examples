@@ -47,6 +47,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeDom\CodeDom.csproj">
+      <Project>{843df79c-9903-4117-980c-11c1ab56c149}</Project>
+      <Name>CodeDom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomAttributes\CustomAttributes.csproj">
+      <Project>{6ccf8590-6132-4233-b44f-fa3106b08aa2}</Project>
+      <Name>CustomAttributes</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

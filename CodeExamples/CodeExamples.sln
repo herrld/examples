@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeExamples", "CodeExample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDom", "CodeDom\CodeDom.csproj", "{843DF79C-9903-4117-980C-11C1AB56C149}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAttributes", "CustomAttributes\CustomAttributes.csproj", "{6CCF8590-6132-4233-B44F-FA3106B08AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesEvents", "DelegatesEvents\DelegatesEvents.csproj", "{46D0ED27-61EA-4A80-8D92-C3ABB51D451C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{843DF79C-9903-4117-980C-11C1AB56C149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{843DF79C-9903-4117-980C-11C1AB56C149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{843DF79C-9903-4117-980C-11C1AB56C149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CCF8590-6132-4233-B44F-FA3106B08AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCF8590-6132-4233-B44F-FA3106B08AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCF8590-6132-4233-B44F-FA3106B08AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCF8590-6132-4233-B44F-FA3106B08AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D0ED27-61EA-4A80-8D92-C3ABB51D451C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D0ED27-61EA-4A80-8D92-C3ABB51D451C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D0ED27-61EA-4A80-8D92-C3ABB51D451C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D0ED27-61EA-4A80-8D92-C3ABB51D451C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
